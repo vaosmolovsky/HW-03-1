@@ -51,7 +51,7 @@ namespace Task1
                     foreach (var File in DirInfo.GetFiles())
                     {
                         Console.WriteLine(File.Name);
-                        if ((DateTime.Now - LastDate) > TimeSpan.FromMinutes(1))
+                        if ((DateTime.Now - LastDate) > TimeSpan.FromMinutes(30))
                         {
                             Console.WriteLine("File {0} has Delete", File.Name);
                             File.Delete();
