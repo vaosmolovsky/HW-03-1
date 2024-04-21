@@ -31,7 +31,7 @@ namespace Task1
                     foreach (var Direct in DirInfo.GetDirectories())
                     {
                         Console.WriteLine(Direct.Name);
-                        if ((DateTime.Now - LastDate) > TimeSpan.FromMinutes(1))
+                        if ((DateTime.Now - LastDate) > TimeSpan.FromMinutes(30))
                         {
                             Console.WriteLine("Directory {0} has delete", Direct.Name);
                             Direct.Delete(true);
